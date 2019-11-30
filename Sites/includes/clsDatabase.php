@@ -1,5 +1,5 @@
 <?php
-
+//This file contains classes to operate on the database.
 
 class clsDemo{
   public $demoString = "myDemoString";
