@@ -4,14 +4,14 @@
 
   <title>Document</title>
   <script type="text/javascript" src="Index.js"></script>
-  <?php include_once 'includes/config.php' ?>
+  <?php require 'includes/config.php' ?>
 </head>
 
 <body>
   <H1>hello Steve</H1><br />
   <div>
     <?php
-        include_once 'includes/clsDatabase.php';
+        require 'includes/clsDatabase.php';
 
         $demoDB = new clsSampleQuery;
         if ($demoDB){
@@ -29,6 +29,7 @@
             echo "salesClass is null";
         }
 
+
        ?>
   </div>
   <script>
@@ -43,7 +44,9 @@
   <div id="tst2"></div>
   <input type="button" onclick="go()" value="run external javascript" />
   <br>
-  <input type="button" onclick="getfilenames()" value="run getfiles" .>
+  <input type="button" onclick="getfilenames()" value="run getfiles" />
+  <br/>
+  <a href="grid.php"> Grid Page<a/>
   <div id="tst1"></div>
 
   <p id="countdown">timer</p>
@@ -69,6 +72,7 @@
         include_once 'includes/fileList.php';
     ?>
   </div>
+
 
 
   <script>

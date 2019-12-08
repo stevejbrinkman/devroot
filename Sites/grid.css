@@ -1,0 +1,25 @@
+/* Grid CSS elements */
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: 50% 20% 30%;
+    background-color: #2196F3;
+    padding: 5px;
+    margin: 10px 400px 30px 400px;
+  }
+  .grid-container > div {
+    background-color: rgba(255, 200, 220, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 4px;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+  }
+  .grid-container > .grid-col-hdr-item {
+    background-color: rgba(220, 200, 170, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 4px;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+  }
+  
