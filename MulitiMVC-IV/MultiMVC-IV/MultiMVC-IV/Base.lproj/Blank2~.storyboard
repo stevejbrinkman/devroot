@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p2j-gu-r8e">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Blank 2-->
+        <scene sceneID="spm-zD-fGc">
+            <objects>
+                <viewController id="HhG-y1-CdB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lyZ-od-y3K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="c8r-29-5Bh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Blank 2" id="Zma-dy-qpZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="def-fs-AdW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="1032"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kNT-tE-CkG">
+            <objects>
+                <tabBarController id="p2j-gu-r8e" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qav-iB-nzL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="6rc-bm-Koj"/>
+                        <segue destination="HhG-y1-CdB" kind="relationship" relationship="viewControllers" id="Ki9-rU-t0d"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tlV-aD-dzo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1868" y="516"/>
+        </scene>
+        <!--Concentration Game-->
+        <scene sceneID="51C-bM-xBL">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Concentration" storyboardName="Concentration" referencedIdentifier="ConcentrationVC" id="hPk-H3-pMz" userLabel="Concentration Game" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="9WA-Ei-Vvf"/>
+                    <navigationItem key="navigationItem" id="Xta-wG-aGk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PH1-3G-r7U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-73" y="703"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kxb-z3-Re8">
+            <objects>
+                <viewController id="502-kU-dXX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qf0-wS-ctx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="X9t-8d-poU">
+                                <rect key="frame" x="138.5" y="321.5" width="98" height="68"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erO-q5-HpP">
+                                        <rect key="frame" x="0.0" y="0.0" width="98" height="30"/>
+                                        <state key="normal" title="Concentration"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QM-PQ-RMh">
+                                        <rect key="frame" x="15" y="38" width="68" height="30"/>
+                                        <state key="normal" title="Set Game"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="setGame" id="gHI-VS-2Hm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="X9t-8d-poU" firstAttribute="centerX" secondItem="Ykh-5k-mBh" secondAttribute="centerX" id="EUD-uE-J8a"/>
+                            <constraint firstItem="X9t-8d-poU" firstAttribute="centerY" secondItem="Ykh-5k-mBh" secondAttribute="centerY" id="ygu-pm-9zc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ykh-5k-mBh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ptd-4I-j0W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tyl-Qq-nyh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-72.799999999999997" y="41.829085457271368"/>
+        </scene>
+        <!--Set Game-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SetViewController" customModule="MultiMVC_IV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibn-4V-bIJ">
+                                <rect key="frame" x="144" y="547" width="75" height="30"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YaN-7l-0U8"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="redraw" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jPx-3j-bmT">
+                                <rect key="frame" x="65" y="469" width="246" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IS3-C0-XJM">
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="70"/>
+                                        <color key="backgroundColor" red="0.23965195626625449" green="0.10947350156037437" blue="0.7529941307106599" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <size key="titleShadowOffset" width="3" height="0.0"/>
+                                        <state key="normal" title="Deck">
+                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        </state>
+                                        <state key="disabled" title="Limit Reached">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deal3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5B5-ik-psU"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="QmO-HZ-LKv">
+                                        <rect key="frame" x="133" y="0.0" width="113" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlG-Fu-tCK">
+                                                <rect key="frame" x="23" y="11" width="67" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="OlG-Fu-tCK" firstAttribute="top" secondItem="QmO-HZ-LKv" secondAttribute="top" constant="11" id="3WA-Vm-ZlZ"/>
+                                            <constraint firstItem="OlG-Fu-tCK" firstAttribute="leading" secondItem="QmO-HZ-LKv" secondAttribute="leading" constant="23" id="Ca8-Mo-W2J"/>
+                                            <constraint firstAttribute="bottom" secondItem="OlG-Fu-tCK" secondAttribute="bottom" constant="11" id="aND-ED-XLX"/>
+                                            <constraint firstAttribute="trailing" secondItem="OlG-Fu-tCK" secondAttribute="trailing" constant="23" id="pBw-Qd-KEw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vBu-qm-mWu" firstAttribute="bottom" secondItem="jPx-3j-bmT" secondAttribute="bottom" constant="79" id="GeS-sC-8Hh"/>
+                            <constraint firstItem="vBu-qm-mWu" firstAttribute="trailing" secondItem="Ibn-4V-bIJ" secondAttribute="trailing" constant="156" id="Iza-Uo-5R3"/>
+                            <constraint firstItem="Ibn-4V-bIJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vBu-qm-mWu" secondAttribute="leading" constant="144" id="M23-X8-eRn"/>
+                            <constraint firstItem="jPx-3j-bmT" firstAttribute="top" relation="lessThanOrEqual" secondItem="vBu-qm-mWu" secondAttribute="top" constant="518" id="YJH-Tz-n2u"/>
+                            <constraint firstItem="vBu-qm-mWu" firstAttribute="trailing" secondItem="jPx-3j-bmT" secondAttribute="trailing" constant="64" id="msK-2h-T7n"/>
+                            <constraint firstItem="vBu-qm-mWu" firstAttribute="bottom" secondItem="Ibn-4V-bIJ" secondAttribute="bottom" constant="41" id="nAn-aO-USn"/>
+                            <constraint firstItem="jPx-3j-bmT" firstAttribute="leading" secondItem="vBu-qm-mWu" secondAttribute="leading" constant="65" id="nhN-wc-tt9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vBu-qm-mWu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Set Game" id="7Ah-KD-H2r"/>
+                    <navigationItem key="navigationItem" id="L9d-ta-dyk"/>
+                    <connections>
+                        <outlet property="DeckButton" destination="IS3-C0-XJM" id="E98-lC-9W8"/>
+                        <outlet property="SetGameView" destination="8bC-Xf-vdC" id="7ct-ZM-j9m"/>
+                        <outlet property="deckStackView" destination="jPx-3j-bmT" id="38K-8Y-VBG"/>
+                        <outlet property="discardLabel" destination="OlG-Fu-tCK" id="g2R-Nj-2hL"/>
+                        <outlet property="discardView" destination="QmO-HZ-LKv" id="H3T-NK-tZy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920.79999999999995" y="30.134932533733135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BjP-Zm-P2I">
+            <objects>
+                <navigationController storyboardIdentifier="SetGame" automaticallyAdjustsScrollViewInsets="NO" id="bYE-IR-xm4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IaZ-J7-vDi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="502-kU-dXX" kind="relationship" relationship="rootViewController" id="U9P-1k-NcR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T7i-Ip-o6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1012" y="41.829085457271368"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6rc-bm-Koj"/>
+    </inferredMetricsTieBreakers>
+</document>

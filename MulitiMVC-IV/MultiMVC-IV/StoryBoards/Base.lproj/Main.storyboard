@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="45m-Jf-8CH">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Set Game-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SetViewController" customModule="MultiMVC_IV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibn-4V-bIJ">
+                                <rect key="frame" x="144" y="547" width="75" height="30"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YaN-7l-0U8"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="redraw" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jPx-3j-bmT">
+                                <rect key="frame" x="65" y="367" width="246" height="172"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IS3-C0-XJM">
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="172"/>
+                                        <color key="backgroundColor" red="0.23965195626625449" green="0.10947350156037437" blue="0.7529941307106599" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <size key="titleShadowOffset" width="3" height="0.0"/>
+                                        <state key="normal" title="Deck">
+                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        </state>
+                                        <state key="disabled" title="Limit Reached">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deal3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5B5-ik-psU"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="QmO-HZ-LKv">
+                                        <rect key="frame" x="133" y="0.0" width="113" height="172"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlG-Fu-tCK">
+                                                <rect key="frame" x="23" y="11" width="67" height="150"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="OlG-Fu-tCK" firstAttribute="top" secondItem="QmO-HZ-LKv" secondAttribute="top" constant="11" id="3WA-Vm-ZlZ"/>
+                                            <constraint firstItem="OlG-Fu-tCK" firstAttribute="leading" secondItem="QmO-HZ-LKv" secondAttribute="leading" constant="23" id="Ca8-Mo-W2J"/>
+                                            <constraint firstAttribute="bottom" secondItem="OlG-Fu-tCK" secondAttribute="bottom" constant="11" id="aND-ED-XLX"/>
+                                            <constraint firstAttribute="trailing" secondItem="OlG-Fu-tCK" secondAttribute="trailing" constant="23" id="pBw-Qd-KEw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vBu-qm-mWu" firstAttribute="bottom" secondItem="jPx-3j-bmT" secondAttribute="bottom" constant="79" id="GeS-sC-8Hh"/>
+                            <constraint firstItem="vBu-qm-mWu" firstAttribute="trailing" secondItem="Ibn-4V-bIJ" secondAttribute="trailing" constant="156" id="Iza-Uo-5R3"/>
+                            <constraint firstItem="Ibn-4V-bIJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vBu-qm-mWu" secondAttribute="leading" constant="144" id="M23-X8-eRn"/>
+                            <constraint firstItem="jPx-3j-bmT" firstAttribute="top" relation="lessThanOrEqual" secondItem="vBu-qm-mWu" secondAttribute="top" constant="518" id="YJH-Tz-n2u"/>
+                            <constraint firstItem="vBu-qm-mWu" firstAttribute="trailing" secondItem="jPx-3j-bmT" secondAttribute="trailing" constant="64" id="msK-2h-T7n"/>
+                            <constraint firstItem="vBu-qm-mWu" firstAttribute="bottom" secondItem="Ibn-4V-bIJ" secondAttribute="bottom" constant="41" id="nAn-aO-USn"/>
+                            <constraint firstItem="jPx-3j-bmT" firstAttribute="leading" secondItem="vBu-qm-mWu" secondAttribute="leading" constant="65" id="nhN-wc-tt9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vBu-qm-mWu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Set Game" id="7Ah-KD-H2r"/>
+                    <navigationItem key="navigationItem" id="L9d-ta-dyk"/>
+                    <connections>
+                        <outlet property="DeckButton" destination="IS3-C0-XJM" id="E98-lC-9W8"/>
+                        <outlet property="SetGameView" destination="8bC-Xf-vdC" id="7ct-ZM-j9m"/>
+                        <outlet property="deckStackView" destination="jPx-3j-bmT" id="38K-8Y-VBG"/>
+                        <outlet property="discardLabel" destination="OlG-Fu-tCK" id="g2R-Nj-2hL"/>
+                        <outlet property="discardView" destination="QmO-HZ-LKv" id="H3T-NK-tZy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="-309"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3i4-Pv-klw">
+            <objects>
+                <tabBarController id="45m-Jf-8CH" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lpc-fy-d46">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZwK-C6-MfO" kind="relationship" relationship="viewControllers" id="GMi-Cd-j4s"/>
+                        <segue destination="O9w-nV-JxC" kind="relationship" relationship="viewControllers" id="Rm7-YU-cpF"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="NGp-p7-cSa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hSU-jH-7lD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1452" y="519"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="ksc-PF-y6e">
+            <objects>
+                <viewController id="ZwK-C6-MfO" customClass="StartupViewController" customModule="MultiMVC_IV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yba-AD-p48">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCb-NJ-ksw">
+                                <rect key="frame" x="120" y="229" width="148" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ejR-9K-M8n"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="4bM-8z-jwX"/>
+                    <navigationItem key="navigationItem" id="R4a-je-bFb"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lmm-3z-pA6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9" y="349"/>
+        </scene>
+        <!--Concentration-->
+        <scene sceneID="Uk4-ga-eCS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Concentration" id="O9w-nV-JxC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="2WN-2e-Wkf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pc4-VK-OwA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49" y="769"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="BjP-Zm-P2I">
+            <objects>
+                <navigationController storyboardIdentifier="SetGame" automaticallyAdjustsScrollViewInsets="NO" id="bYE-IR-xm4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" id="tLr-ZR-8ih"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IaZ-J7-vDi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZwK-C6-MfO" kind="show" id="Nm2-pm-nvc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T7i-Ip-o6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1129" y="-201"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Nm2-pm-nvc"/>
+    </inferredMetricsTieBreakers>
+</document>
