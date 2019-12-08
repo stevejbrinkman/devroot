@@ -1,0 +1,165 @@
+/**/
+/* General CSS elements */
+/**/
+
+
+h1 {
+text-align: center;
+           line-height: 105%;
+           font-size: 30.0pt;
+           font-family: Cambria, serif;
+           color: #632423;
+           text-transform: uppercase;
+           letter-spacing: 3.0pt;
+           border-style: none;
+           border-color: inherit;
+           border-width: medium;
+           margin-left: 0in;
+           margin-right: 0in;
+           margin-top: 20.0pt;
+           margin-bottom: 10.0pt;
+           padding: 0in;
+}
+h2 {
+	text-align: center;
+            line-height: 105%;
+            font-size: 13.0pt;
+            font-family: Cambria, serif;
+            color: #632423;
+            text-transform: uppercase;
+            letter-spacing: 1.0pt;
+            border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            margin-left: 0in;
+            margin-right: 0in;
+            margin-top: 20.0pt;
+            margin-bottom: 10.0pt;
+            padding: 0in;
+}
+h3 {
+	text-align: center;
+            line-height: 105%;
+            font-size: 10.0pt;
+            font-family: Cambria, serif;
+            color: #632423;
+            text-transform: uppercase;
+            letter-spacing: 1.0pt;
+            border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            margin-left: 0in;
+            margin-right: 0in;
+            margin-top: 20.0pt;
+            margin-bottom: 10.0pt;
+            padding: 0in;
+}
+h4 {
+	margin: 1.2em 0em 1.2em 0em;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+h5 {
+	margin: 1.2em 0em 1.2em 0em;
+	font-size: 1.0em;
+	font-weight: bold;
+}
+h6 {
+	margin: 1.2em 0em 1.2em 0em;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+p {
+	margin: 0.8em 0em 1.2em 0em;
+	font-size: 1.0em;
+	line-height: 1.8em;
+}
+ p.MsoNormal
+	{margin-top:0in;
+	margin-right:0.2in;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:8px;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:105%;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	}
+p.notations
+
+	{margin-top:0in;
+	margin-right:0.2in;
+	padding-left:50px;
+	padding-right:30px;
+	padding-top:2px;
+	margin-bottom:0.0pt;
+	margin-left:0in;
+	line-height:105%;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	}
+
+pre {
+	font-family: monospace;
+	font-size: 1.0em;
+}
+
+strong, b {font-weight: bold;}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color:blue;                       /*#397D47;*/
+}
+#mysubmit{
+	background-color:rgb(52, 213, 226); 
+	width:200px;  
+	padding: 0px 50px 0px 50px;
+	margin: 40px;
+	font-family: Cambria, serif; 
+	font-size: 13.0pt; 
+}
+input[type=submit]{background-color:rgb(202, 213, 226); 
+	width:200px;  
+	padding: 50px;
+	margin: 40px;
+	font-family: Cambria, serif; 
+	font-size: 13.0pt; }
+
+a:hover {
+	text-decoration:underline;	
+	color:#333333;
+}
+
+/* SB provides most font styles and far background content. */
+body {
+	
+	/*padding: 0 377px;	*/
+	background-color:White;
+	/*background-color: #FBFBF6;*/
+	font-family:"Lucida Sans", Verdana, "Lucida Grande", Geneva, sans-serif;
+	font-size:80%;
+	background-image:url(Images/bg_tile.gif);
+}
+#mainmenu .normallink {
+	padding:0 10px;
+	font-weight: normal;
+	color: BLACK; 
+	background-color:#DEDEBC;                       /*#FFFFFF;*/
+	
+}
+#mainmenu .selectedlink {
+	padding:0 10px;
+	background-color:white; 
+	font-weight:bolder;                /* SB #DEDEBC; */
+	color:BLACK;                                   /*#397D47;*/
+}
+#mainmenu, #mainmenu tr {
+	height:24px;
+	position:relative;
+	border:  Ridge 4px #DEDEBC;
+}
+
+
