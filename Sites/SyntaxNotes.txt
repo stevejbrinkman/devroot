@@ -1,3 +1,5 @@
 // mySql commands
 //Connect to mysql in terminal
 /usr/local/mysql/bin/mysql -uroot -p
+
+/* comment added for test */
