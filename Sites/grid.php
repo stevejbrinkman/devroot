@@ -33,7 +33,7 @@
             </select>
             <br/>
             <input id="mysubmit" type="submit" value="Submit"  /><br/>
-            <input class="submitbutton" type="text" value="button"/>
+           
         <form/>
         
         <?php
